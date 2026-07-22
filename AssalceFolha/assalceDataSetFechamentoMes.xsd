@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="assalceDataSetFechamentoMes" targetNamespace="http://tempuri.org/assalceDataSetFechamentoMes.xsd" xmlns:mstns="http://tempuri.org/assalceDataSetFechamentoMes.xsd" xmlns="http://tempuri.org/assalceDataSetFechamentoMes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="assalceConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="assalceConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AssalceFolha.Properties.Settings.GlobalReference.Default.assalceConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_relatorio_fechamento_mesTableAdapter" GeneratorDataComponentClassName="vw_relatorio_fechamento_mesTableAdapter" Name="vw_relatorio_fechamento_mes" UserDataComponentName="vw_relatorio_fechamento_mesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="assalceConnectionString (Settings)" DbObjectName="assalce.vw_relatorio_fechamento_mes" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `NR_COMPETENCIA`, `CODCONV`, `CONVENI`, `VALOR` FROM `assalce`.`vw_relatorio_fechamento_mes`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NR_COMPETENCIA" DataSetColumn="NR_COMPETENCIA" />
+              <Mapping SourceColumn="CODCONV" DataSetColumn="CODCONV" />
+              <Mapping SourceColumn="CONVENI" DataSetColumn="CONVENI" />
+              <Mapping SourceColumn="VALOR" DataSetColumn="VALOR" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="assalceDataSetFechamentoMes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="assalceDataSetFechamentoMes" msprop:Generator_UserDSName="assalceDataSetFechamentoMes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_relatorio_fechamento_mes" msprop:Generator_TableClassName="vw_relatorio_fechamento_mesDataTable" msprop:Generator_TableVarName="tablevw_relatorio_fechamento_mes" msprop:Generator_TablePropName="vw_relatorio_fechamento_mes" msprop:Generator_RowDeletingName="vw_relatorio_fechamento_mesRowDeleting" msprop:Generator_RowChangingName="vw_relatorio_fechamento_mesRowChanging" msprop:Generator_RowEvHandlerName="vw_relatorio_fechamento_mesRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_relatorio_fechamento_mesRowDeleted" msprop:Generator_UserTableName="vw_relatorio_fechamento_mes" msprop:Generator_RowChangedName="vw_relatorio_fechamento_mesRowChanged" msprop:Generator_RowEvArgName="vw_relatorio_fechamento_mesRowChangeEvent" msprop:Generator_RowClassName="vw_relatorio_fechamento_mesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NR_COMPETENCIA" msprop:Generator_ColumnVarNameInTable="columnNR_COMPETENCIA" msprop:Generator_ColumnPropNameInRow="NR_COMPETENCIA" msprop:Generator_ColumnPropNameInTable="NR_COMPETENCIAColumn" msprop:Generator_UserColumnName="NR_COMPETENCIA" type="xs:long" minOccurs="0" />
+              <xs:element name="CODCONV" msprop:Generator_ColumnVarNameInTable="columnCODCONV" msprop:Generator_ColumnPropNameInRow="CODCONV" msprop:Generator_ColumnPropNameInTable="CODCONVColumn" msprop:Generator_UserColumnName="CODCONV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONVENI" msprop:Generator_ColumnVarNameInTable="columnCONVENI" msprop:Generator_ColumnPropNameInRow="CONVENI" msprop:Generator_ColumnPropNameInTable="CONVENIColumn" msprop:Generator_UserColumnName="CONVENI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VALOR" msprop:Generator_ColumnVarNameInTable="columnVALOR" msprop:Generator_ColumnPropNameInRow="VALOR" msprop:Generator_ColumnPropNameInTable="VALORColumn" msprop:Generator_UserColumnName="VALOR" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

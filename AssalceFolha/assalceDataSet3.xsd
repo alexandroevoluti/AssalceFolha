@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="assalceDataSet3" targetNamespace="http://tempuri.org/assalceDataSet3.xsd" xmlns:mstns="http://tempuri.org/assalceDataSet3.xsd" xmlns="http://tempuri.org/assalceDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="assalceConnectionString10" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="assalceConnectionString10 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AssalceFolha.Properties.Settings.GlobalReference.Default.assalceConnectionString10" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_relatorio_snTableAdapter" GeneratorDataComponentClassName="vw_relatorio_snTableAdapter" Name="vw_relatorio_sn" UserDataComponentName="vw_relatorio_snTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="assalceConnectionString10 (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `COUNT`, `MATRI`, `FOLHA`, `NOME`, `SITUACAO`, `SITDRH`, `DATA`, `CODCONV`, `CONVENI`, `EVENTO`, `VALORDES`, `REFER`, `MES`, `ANO`, `ST`, `DTCAD`, `USUARIO` FROM `assalce`.`vw_relatorio_sn`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="assalceDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="assalceDataSet3" msprop:Generator_UserDSName="assalceDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_relatorio_sn" msprop:Generator_TableClassName="vw_relatorio_snDataTable" msprop:Generator_TableVarName="tablevw_relatorio_sn" msprop:Generator_TablePropName="vw_relatorio_sn" msprop:Generator_RowDeletingName="vw_relatorio_snRowDeleting" msprop:Generator_RowChangingName="vw_relatorio_snRowChanging" msprop:Generator_RowEvHandlerName="vw_relatorio_snRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_relatorio_snRowDeleted" msprop:Generator_UserTableName="vw_relatorio_sn" msprop:Generator_RowChangedName="vw_relatorio_snRowChanged" msprop:Generator_RowEvArgName="vw_relatorio_snRowChangeEvent" msprop:Generator_RowClassName="vw_relatorio_snRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="assalceDataSet9" targetNamespace="http://tempuri.org/assalceDataSet9.xsd" xmlns:mstns="http://tempuri.org/assalceDataSet9.xsd" xmlns="http://tempuri.org/assalceDataSet9.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="assalceConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="assalceConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AssalceFolha.Properties.Settings.GlobalReference.Default.assalceConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_relatorio_envio_emailTableAdapter" GeneratorDataComponentClassName="vw_relatorio_envio_emailTableAdapter" Name="vw_relatorio_envio_email" UserDataComponentName="vw_relatorio_envio_emailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="assalceConnectionString (Settings)" DbObjectName="assalce.vw_relatorio_envio_email" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `CD_ENVIO_FOLHA`, `NR_ANO`, `NR_MES`, `NR_MATRICULA`, `NR_FOLHA`, `NOME`, `CD_EVENTO`, `VALOR`, `DE_REFERENCIA` FROM `assalce`.`vw_relatorio_envio_email`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CD_ENVIO_FOLHA" DataSetColumn="CD_ENVIO_FOLHA" />
+              <Mapping SourceColumn="NR_ANO" DataSetColumn="NR_ANO" />
+              <Mapping SourceColumn="NR_MES" DataSetColumn="NR_MES" />
+              <Mapping SourceColumn="NR_MATRICULA" DataSetColumn="NR_MATRICULA" />
+              <Mapping SourceColumn="NR_FOLHA" DataSetColumn="NR_FOLHA" />
+              <Mapping SourceColumn="NOME" DataSetColumn="NOME" />
+              <Mapping SourceColumn="CD_EVENTO" DataSetColumn="CD_EVENTO" />
+              <Mapping SourceColumn="VALOR" DataSetColumn="VALOR" />
+              <Mapping SourceColumn="DE_REFERENCIA" DataSetColumn="DE_REFERENCIA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="assalceDataSet9" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="assalceDataSet9" msprop:Generator_UserDSName="assalceDataSet9">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_relatorio_envio_email" msprop:Generator_TableClassName="vw_relatorio_envio_emailDataTable" msprop:Generator_TableVarName="tablevw_relatorio_envio_email" msprop:Generator_TablePropName="vw_relatorio_envio_email" msprop:Generator_RowDeletingName="vw_relatorio_envio_emailRowDeleting" msprop:Generator_RowChangingName="vw_relatorio_envio_emailRowChanging" msprop:Generator_RowEvHandlerName="vw_relatorio_envio_emailRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_relatorio_envio_emailRowDeleted" msprop:Generator_UserTableName="vw_relatorio_envio_email" msprop:Generator_RowChangedName="vw_relatorio_envio_emailRowChanged" msprop:Generator_RowEvArgName="vw_relatorio_envio_emailRowChangeEvent" msprop:Generator_RowClassName="vw_relatorio_envio_emailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CD_ENVIO_FOLHA" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCD_ENVIO_FOLHA" msprop:Generator_ColumnPropNameInRow="CD_ENVIO_FOLHA" msprop:Generator_ColumnPropNameInTable="CD_ENVIO_FOLHAColumn" msprop:Generator_UserColumnName="CD_ENVIO_FOLHA" type="xs:int" />
+              <xs:element name="NR_ANO" msprop:Generator_ColumnVarNameInTable="columnNR_ANO" msprop:Generator_ColumnPropNameInRow="NR_ANO" msprop:Generator_ColumnPropNameInTable="NR_ANOColumn" msprop:Generator_UserColumnName="NR_ANO" type="xs:int" />
+              <xs:element name="NR_MES" msprop:Generator_ColumnVarNameInTable="columnNR_MES" msprop:Generator_ColumnPropNameInRow="NR_MES" msprop:Generator_ColumnPropNameInTable="NR_MESColumn" msprop:Generator_UserColumnName="NR_MES" type="xs:int" />
+              <xs:element name="NR_MATRICULA" msprop:Generator_ColumnVarNameInTable="columnNR_MATRICULA" msprop:Generator_ColumnPropNameInRow="NR_MATRICULA" msprop:Generator_ColumnPropNameInTable="NR_MATRICULAColumn" msprop:Generator_UserColumnName="NR_MATRICULA" type="xs:int" />
+              <xs:element name="NR_FOLHA" msprop:Generator_ColumnVarNameInTable="columnNR_FOLHA" msprop:Generator_ColumnPropNameInRow="NR_FOLHA" msprop:Generator_ColumnPropNameInTable="NR_FOLHAColumn" msprop:Generator_UserColumnName="NR_FOLHA" type="xs:int" />
+              <xs:element name="NOME" msprop:Generator_ColumnVarNameInTable="columnNOME" msprop:Generator_ColumnPropNameInRow="NOME" msprop:Generator_ColumnPropNameInTable="NOMEColumn" msprop:Generator_UserColumnName="NOME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CD_EVENTO" msprop:Generator_ColumnVarNameInTable="columnCD_EVENTO" msprop:Generator_ColumnPropNameInRow="CD_EVENTO" msprop:Generator_ColumnPropNameInTable="CD_EVENTOColumn" msprop:Generator_UserColumnName="CD_EVENTO" type="xs:int" />
+              <xs:element name="VALOR" msprop:Generator_ColumnVarNameInTable="columnVALOR" msprop:Generator_ColumnPropNameInRow="VALOR" msprop:Generator_ColumnPropNameInTable="VALORColumn" msprop:Generator_UserColumnName="VALOR" type="xs:double" minOccurs="0" />
+              <xs:element name="DE_REFERENCIA" msprop:Generator_ColumnVarNameInTable="columnDE_REFERENCIA" msprop:Generator_ColumnPropNameInRow="DE_REFERENCIA" msprop:Generator_ColumnPropNameInTable="DE_REFERENCIAColumn" msprop:Generator_UserColumnName="DE_REFERENCIA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_relatorio_envio_email" />
+      <xs:field xpath="mstns:CD_ENVIO_FOLHA" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRelConvenio" targetNamespace="http://tempuri.org/dsRelConvenio.xsd" xmlns:mstns="http://tempuri.org/dsRelConvenio.xsd" xmlns="http://tempuri.org/dsRelConvenio.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="assalceConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="assalceConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AssalceFolha.Properties.Settings.GlobalReference.Default.assalceConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_relatorio_convenioTableAdapter" GeneratorDataComponentClassName="vw_relatorio_convenioTableAdapter" Name="vw_relatorio_convenio" UserDataComponentName="vw_relatorio_convenioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="assalceConnectionString (Settings)" DbObjectName="assalce.vw_relatorio_convenio" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ANO`, `MES`, `CODCONV`, `CONVENI`, `EVENTO`, `QTDE`, `VALOR` FROM `assalce`.`vw_relatorio_convenio`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ANO" DataSetColumn="ANO" />
+              <Mapping SourceColumn="MES" DataSetColumn="MES" />
+              <Mapping SourceColumn="CODCONV" DataSetColumn="CODCONV" />
+              <Mapping SourceColumn="CONVENI" DataSetColumn="CONVENI" />
+              <Mapping SourceColumn="EVENTO" DataSetColumn="EVENTO" />
+              <Mapping SourceColumn="QTDE" DataSetColumn="QTDE" />
+              <Mapping SourceColumn="VALOR" DataSetColumn="VALOR" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRelConvenio" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsRelConvenio" msprop:Generator_UserDSName="dsRelConvenio">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_relatorio_convenio" msprop:Generator_TableClassName="vw_relatorio_convenioDataTable" msprop:Generator_TableVarName="tablevw_relatorio_convenio" msprop:Generator_TablePropName="vw_relatorio_convenio" msprop:Generator_RowDeletingName="vw_relatorio_convenioRowDeleting" msprop:Generator_RowChangingName="vw_relatorio_convenioRowChanging" msprop:Generator_RowEvHandlerName="vw_relatorio_convenioRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_relatorio_convenioRowDeleted" msprop:Generator_UserTableName="vw_relatorio_convenio" msprop:Generator_RowChangedName="vw_relatorio_convenioRowChanged" msprop:Generator_RowEvArgName="vw_relatorio_convenioRowChangeEvent" msprop:Generator_RowClassName="vw_relatorio_convenioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ANO" msprop:Generator_ColumnVarNameInTable="columnANO" msprop:Generator_ColumnPropNameInRow="ANO" msprop:Generator_ColumnPropNameInTable="ANOColumn" msprop:Generator_UserColumnName="ANO" type="xs:short" minOccurs="0" />
+              <xs:element name="MES" msprop:Generator_ColumnVarNameInTable="columnMES" msprop:Generator_ColumnPropNameInRow="MES" msprop:Generator_ColumnPropNameInTable="MESColumn" msprop:Generator_UserColumnName="MES" type="xs:short" minOccurs="0" />
+              <xs:element name="CODCONV" msprop:Generator_ColumnVarNameInTable="columnCODCONV" msprop:Generator_ColumnPropNameInRow="CODCONV" msprop:Generator_ColumnPropNameInTable="CODCONVColumn" msprop:Generator_UserColumnName="CODCONV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONVENI" msprop:Generator_ColumnVarNameInTable="columnCONVENI" msprop:Generator_ColumnPropNameInRow="CONVENI" msprop:Generator_ColumnPropNameInTable="CONVENIColumn" msprop:Generator_UserColumnName="CONVENI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EVENTO" msprop:Generator_ColumnVarNameInTable="columnEVENTO" msprop:Generator_ColumnPropNameInRow="EVENTO" msprop:Generator_ColumnPropNameInTable="EVENTOColumn" msprop:Generator_UserColumnName="EVENTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QTDE" msprop:Generator_ColumnVarNameInTable="columnQTDE" msprop:Generator_ColumnPropNameInRow="QTDE" msprop:Generator_ColumnPropNameInTable="QTDEColumn" msprop:Generator_UserColumnName="QTDE" type="xs:long" />
+              <xs:element name="VALOR" msprop:Generator_ColumnVarNameInTable="columnVALOR" msprop:Generator_ColumnPropNameInRow="VALOR" msprop:Generator_ColumnPropNameInTable="VALORColumn" msprop:Generator_UserColumnName="VALOR" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

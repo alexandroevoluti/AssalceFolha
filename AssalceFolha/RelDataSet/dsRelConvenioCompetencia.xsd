@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRelConvenioCompetencia" targetNamespace="http://tempuri.org/dsRelConvenioCompetencia.xsd" xmlns:mstns="http://tempuri.org/dsRelConvenioCompetencia.xsd" xmlns="http://tempuri.org/dsRelConvenioCompetencia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRelConvenioCompetencia" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsRelConvenioCompetencia" msprop:Generator_UserDSName="dsRelConvenioCompetencia">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DtRelatorio" msprop:Generator_TableClassName="DtRelatorioDataTable" msprop:Generator_TableVarName="tableDtRelatorio" msprop:Generator_TablePropName="DtRelatorio" msprop:Generator_RowDeletingName="DtRelatorioRowDeleting" msprop:Generator_RowChangingName="DtRelatorioRowChanging" msprop:Generator_RowEvHandlerName="DtRelatorioRowChangeEventHandler" msprop:Generator_RowDeletedName="DtRelatorioRowDeleted" msprop:Generator_UserTableName="DtRelatorio" msprop:Generator_RowChangedName="DtRelatorioRowChanged" msprop:Generator_RowEvArgName="DtRelatorioRowChangeEvent" msprop:Generator_RowClassName="DtRelatorioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MATR" msprop:Generator_ColumnVarNameInTable="columnMATR" msprop:Generator_ColumnPropNameInRow="MATR" msprop:Generator_ColumnPropNameInTable="MATRColumn" msprop:Generator_UserColumnName="MATR" type="xs:int" minOccurs="0" />
+              <xs:element name="FOLHA" msprop:Generator_ColumnVarNameInTable="columnFOLHA" msprop:Generator_ColumnPropNameInRow="FOLHA" msprop:Generator_ColumnPropNameInTable="FOLHAColumn" msprop:Generator_UserColumnName="FOLHA" type="xs:int" minOccurs="0" />
+              <xs:element name="NOME" msprop:Generator_ColumnVarNameInTable="columnNOME" msprop:Generator_ColumnPropNameInRow="NOME" msprop:Generator_ColumnPropNameInTable="NOMEColumn" msprop:Generator_UserColumnName="NOME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NR_COMPETENCIA_INICIO" msprop:Generator_ColumnVarNameInTable="columnNR_COMPETENCIA_INICIO" msprop:Generator_ColumnPropNameInRow="NR_COMPETENCIA_INICIO" msprop:Generator_ColumnPropNameInTable="NR_COMPETENCIA_INICIOColumn" msprop:Generator_UserColumnName="NR_COMPETENCIA_INICIO" type="xs:int" minOccurs="0" />
+              <xs:element name="NR_COMPETENCIA_FIM" msprop:Generator_ColumnVarNameInTable="columnNR_COMPETENCIA_FIM" msprop:Generator_ColumnPropNameInRow="NR_COMPETENCIA_FIM" msprop:Generator_ColumnPropNameInTable="NR_COMPETENCIA_FIMColumn" msprop:Generator_UserColumnName="NR_COMPETENCIA_FIM" type="xs:int" minOccurs="0" />
+              <xs:element name="DT_INICIO" msprop:Generator_ColumnVarNameInTable="columnDT_INICIO" msprop:Generator_ColumnPropNameInRow="DT_INICIO" msprop:Generator_ColumnPropNameInTable="DT_INICIOColumn" msprop:Generator_UserColumnName="DT_INICIO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DT_FIM" msprop:Generator_ColumnVarNameInTable="columnDT_FIM" msprop:Generator_ColumnPropNameInRow="DT_FIM" msprop:Generator_ColumnPropNameInTable="DT_FIMColumn" msprop:Generator_UserColumnName="DT_FIM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CD_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnCD_CONVENIO" msprop:Generator_ColumnPropNameInRow="CD_CONVENIO" msprop:Generator_ColumnPropNameInTable="CD_CONVENIOColumn" msprop:Generator_UserColumnName="CD_CONVENIO" type="xs:int" minOccurs="0" />
+              <xs:element name="ST" msprop:Generator_ColumnVarNameInTable="columnST" msprop:Generator_ColumnPropNameInRow="ST" msprop:Generator_ColumnPropNameInTable="STColumn" msprop:Generator_UserColumnName="ST" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VERRAZ" msprop:Generator_ColumnVarNameInTable="columnVERRAZ" msprop:Generator_ColumnPropNameInRow="VERRAZ" msprop:Generator_ColumnPropNameInTable="VERRAZColumn" msprop:Generator_UserColumnName="VERRAZ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VALOR" msprop:Generator_ColumnVarNameInTable="columnVALOR" msprop:Generator_ColumnPropNameInRow="VALOR" msprop:Generator_ColumnPropNameInTable="VALORColumn" msprop:Generator_UserColumnName="VALOR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SITUACAO" msprop:Generator_ColumnVarNameInTable="columnSITUACAO" msprop:Generator_ColumnPropNameInRow="SITUACAO" msprop:Generator_ColumnPropNameInTable="SITUACAOColumn" msprop:Generator_UserColumnName="SITUACAO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="assalceDataSet7" targetNamespace="http://tempuri.org/assalceDataSet7.xsd" xmlns:mstns="http://tempuri.org/assalceDataSet7.xsd" xmlns="http://tempuri.org/assalceDataSet7.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="assalceConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="assalceConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AssalceFolha.Properties.Settings.GlobalReference.Default.assalceConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_relatorio_convenio_competenciasTableAdapter" GeneratorDataComponentClassName="vw_relatorio_convenio_competenciasTableAdapter" Name="vw_relatorio_convenio_competencias" UserDataComponentName="vw_relatorio_convenio_competenciasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="assalceConnectionString (Settings)" DbObjectName="assalce.vw_relatorio_convenio_competencias" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `MATR`, `FOLHA`, `NOME`, `NR_COMPETENCIA`, `CD_CONVENIO`, `VERRAZ`, `VALOR` FROM `assalce`.`vw_relatorio_convenio_competencias`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MATR" DataSetColumn="MATR" />
+              <Mapping SourceColumn="FOLHA" DataSetColumn="FOLHA" />
+              <Mapping SourceColumn="NOME" DataSetColumn="NOME" />
+              <Mapping SourceColumn="NR_COMPETENCIA" DataSetColumn="NR_COMPETENCIA" />
+              <Mapping SourceColumn="CD_CONVENIO" DataSetColumn="CD_CONVENIO" />
+              <Mapping SourceColumn="VERRAZ" DataSetColumn="VERRAZ" />
+              <Mapping SourceColumn="VALOR" DataSetColumn="VALOR" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="assalceDataSet7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="assalceDataSet7" msprop:Generator_UserDSName="assalceDataSet7">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_relatorio_convenio_competencias" msprop:Generator_TableClassName="vw_relatorio_convenio_competenciasDataTable" msprop:Generator_TableVarName="tablevw_relatorio_convenio_competencias" msprop:Generator_TablePropName="vw_relatorio_convenio_competencias" msprop:Generator_RowDeletingName="vw_relatorio_convenio_competenciasRowDeleting" msprop:Generator_RowChangingName="vw_relatorio_convenio_competenciasRowChanging" msprop:Generator_RowEvHandlerName="vw_relatorio_convenio_competenciasRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_relatorio_convenio_competenciasRowDeleted" msprop:Generator_UserTableName="vw_relatorio_convenio_competencias" msprop:Generator_RowChangedName="vw_relatorio_convenio_competenciasRowChanged" msprop:Generator_RowEvArgName="vw_relatorio_convenio_competenciasRowChangeEvent" msprop:Generator_RowClassName="vw_relatorio_convenio_competenciasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MATR" msprop:Generator_ColumnVarNameInTable="columnMATR" msprop:Generator_ColumnPropNameInRow="MATR" msprop:Generator_ColumnPropNameInTable="MATRColumn" msprop:Generator_UserColumnName="MATR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FOLHA" msprop:Generator_ColumnVarNameInTable="columnFOLHA" msprop:Generator_ColumnPropNameInRow="FOLHA" msprop:Generator_ColumnPropNameInTable="FOLHAColumn" msprop:Generator_UserColumnName="FOLHA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME" msprop:Generator_ColumnVarNameInTable="columnNOME" msprop:Generator_ColumnPropNameInRow="NOME" msprop:Generator_ColumnPropNameInTable="NOMEColumn" msprop:Generator_UserColumnName="NOME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NR_COMPETENCIA" msprop:Generator_ColumnVarNameInTable="columnNR_COMPETENCIA" msprop:Generator_ColumnPropNameInRow="NR_COMPETENCIA" msprop:Generator_ColumnPropNameInTable="NR_COMPETENCIAColumn" msprop:Generator_UserColumnName="NR_COMPETENCIA" type="xs:long" minOccurs="0" />
+              <xs:element name="CD_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnCD_CONVENIO" msprop:Generator_ColumnPropNameInRow="CD_CONVENIO" msprop:Generator_ColumnPropNameInTable="CD_CONVENIOColumn" msprop:Generator_UserColumnName="CD_CONVENIO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VERRAZ" msprop:Generator_ColumnVarNameInTable="columnVERRAZ" msprop:Generator_ColumnPropNameInRow="VERRAZ" msprop:Generator_ColumnPropNameInTable="VERRAZColumn" msprop:Generator_UserColumnName="VERRAZ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VALOR" msprop:Generator_ColumnVarNameInTable="columnVALOR" msprop:Generator_ColumnPropNameInRow="VALOR" msprop:Generator_ColumnPropNameInTable="VALORColumn" msprop:Generator_UserColumnName="VALOR" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

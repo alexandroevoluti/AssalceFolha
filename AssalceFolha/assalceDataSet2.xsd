@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="assalceDataSet2" targetNamespace="http://tempuri.org/assalceDataSet2.xsd" xmlns:mstns="http://tempuri.org/assalceDataSet2.xsd" xmlns="http://tempuri.org/assalceDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="assalceConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="assalceConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AssalceFolha.Properties.Settings.GlobalReference.Default.assalceConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_tmp_mapaTableAdapter" GeneratorDataComponentClassName="vw_tmp_mapaTableAdapter" Name="vw_tmp_mapa" UserDataComponentName="vw_tmp_mapaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="assalceConnectionString (Settings)" DbObjectName="assalce.vw_tmp_mapa" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `NR_ANO`, `NR_MES`, `CD_EVENTO`, `FL_01`, `FL_02`, `FL_03`, `FL_04`, `FL_06`, `FL_07`, `FL_08`, `FL_09`, `FL_14`, `FL_16`, `FL_17` FROM `assalce`.`vw_tmp_mapa`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="assalceDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="assalceDataSet2" msprop:Generator_UserDSName="assalceDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_tmp_mapa" msprop:Generator_TableClassName="vw_tmp_mapaDataTable" msprop:Generator_TableVarName="tablevw_tmp_mapa" msprop:Generator_TablePropName="vw_tmp_mapa" msprop:Generator_RowDeletingName="vw_tmp_mapaRowDeleting" msprop:Generator_RowChangingName="vw_tmp_mapaRowChanging" msprop:Generator_RowEvHandlerName="vw_tmp_mapaRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_tmp_mapaRowDeleted" msprop:Generator_UserTableName="vw_tmp_mapa" msprop:Generator_RowChangedName="vw_tmp_mapaRowChanged" msprop:Generator_RowEvArgName="vw_tmp_mapaRowChangeEvent" msprop:Generator_RowClassName="vw_tmp_mapaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
