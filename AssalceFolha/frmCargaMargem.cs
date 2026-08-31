@@ -40,7 +40,8 @@ namespace AssalceFolha
                 DateTime _data = DateTime.Now;
                 if (_data.Day > 25) _data = _data.AddMonths(1);
 
-                dtpCompetencia.Value = _data;
+                // Dia 1 fixo: o formato "MM/yyyy" oculta o dia, e meses curtos gerariam data inexistente.
+                dtpCompetencia.Value = new DateTime(_data.Year, _data.Month, 1);
             }
             catch (Exception ex)
             {

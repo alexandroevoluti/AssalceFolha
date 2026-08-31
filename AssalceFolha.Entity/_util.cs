@@ -818,6 +818,7 @@ namespace AssalceFolha.Entity
         public static int ConvertInt(object _obj)
         {
             int _valor = 0;
+            if (_obj == null) return 0;
             try
             {
                 int.TryParse(_obj.ToString(), out _valor);

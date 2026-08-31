@@ -26,8 +26,11 @@ namespace AssalceFolha
 
             ucAssociado1.Focus();
 
-            dtpCompetenciaInicial.Text = DateTime.Now.AddMonths(-6).ToString("MM/yyyy");
-            dtpCompetenciaFinal.Text = DateTime.Now.ToString("MM/yyyy");
+            // Dia 1 fixo: o formato "MM/yyyy" oculta o dia, e meses curtos gerariam data inexistente.
+            DateTime _inicial = DateTime.Now.AddMonths(-6);
+
+            dtpCompetenciaInicial.Value = new DateTime(_inicial.Year, _inicial.Month, 1);
+            dtpCompetenciaFinal.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
 
 
             this.Text = new Enumerator<enumRelatorio>().EnumToString(_relatorio);

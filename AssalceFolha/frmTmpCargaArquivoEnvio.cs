@@ -29,6 +29,9 @@ namespace AssalceFolha
             }
 
             InitializeComponent();
+
+            // Dia 1 fixo: o formato "MM/yyyy" oculta o dia, e meses curtos gerariam data inexistente.
+            dtpCompetencia.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
         }
 
         private void btnCarregar_Click(object sender, EventArgs e)

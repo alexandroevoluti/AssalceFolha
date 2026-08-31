@@ -18,6 +18,12 @@ namespace AssalceFolha
         public frmAcompanhamentoMensal()
         {
             InitializeComponent();
+
+            // O formato "MM/yyyy" esconde o dia, mas ele continua no Value. Se o dia for 29/30/31,
+            // digitar um mês mais curto forma uma data inexistente e o controle lança exceção.
+            dtpCompetencia.ValueChanged -= dtpCompetencia_ValueChanged;
+            dtpCompetencia.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+            dtpCompetencia.ValueChanged += dtpCompetencia_ValueChanged;
         }
 
         private void frmAcompanhamentoMensal_Load(object sender, EventArgs e)
